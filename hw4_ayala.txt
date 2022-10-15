@@ -1,0 +1,47 @@
+#task1
+
+class Bank:
+    def __init__(sum):
+        sum.balance = 0
+
+    def deposit(sum):
+        amount = float(input("Deposit amount: "))
+        sum.balance += amount
+        print("Deposit:", amount , "kzt")
+
+    def withdraw(sum):
+        amount = float(input("Withdrawal amount: "))
+        sum.balance -= amount
+        print("Withdraw:", amount, "kzt")
+    def current(sum):
+        print("Current amount:", sum.balance, "kzt")
+
+a = Bank()
+a.deposit()
+a.withdraw()
+a.current()
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+#task2
+
+class Money: 
+    
+    def __init__(self, number, currency, amount):
+        self.number = number
+        self.currency = currency
+        self.amount = amount
+        sum.balance = 0
+    
+    def to_tenge (self):
+        if self.currency == 'EUR':
+            return self.number * self.amount * 450
+        if self.currency == 'RUB':
+            return self.number * self.amount * 8
+        if self.currency == 'KZT':
+            return self.number * self.amount * 1
+    
+    def __str__():
+        pass
+
+a = Money()
+a.to_tenge()
